@@ -6,7 +6,7 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -96,12 +96,18 @@ nav a:hover:before, nav a.active:before {
 	padding: 8% 0 0 5%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .bold {
 	font-weight: 900;
 }
 
 .thin {
+  font-family: 'Josefin Sans', sans-serif;
 	font-weight: 100;
+  font-style: italic;
 }
 
 main {
@@ -138,77 +144,61 @@ main section {
 	min-height: 100%;
 }
 
-/* Work */
-
-.work {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    justify-content: center;
-    -webkit-justify-content: center;
-    align-content: space-around;
-    -webkit-align-content: space-around;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 5% 0;
+main.work {
+  display: flex;
+  -webkit-display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.work .item {
-    background-size: cover;
-    background-position: center center;
-    min-height: 400px;
-    min-width: 400px;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+.films {
+  width: 100%;
+  min-height: 25vh;
+  display: flex;
+  -webkit-display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.work .item:hover {
-    -webkit-box-shadow: 0px 15px 30px 10px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 15px 30px 10px rgba(0,0,0,0.75);
-    -o-box-shadow: 0px 15px 30px 10px rgba(0,0,0,0.75);
-    box-shadow: 0px 15px 30px 10px rgba(0,0,0,0.75);
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+.film-item {
+  width: 25vw;
+  height: 30vh;
+  transition: all 0.5s ease-in-out;
+  margin: 2vh 2vw;
 }
 
-.work a {
-    text-decoration: none;
-    color: inherit;
-    align-self: center;
-    text-align: center;
+.film-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 
-.item-info {
-    background: rgba(0,0,0,0.6);
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    justify-content: center;
-    -webkit-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
-    min-width: 50%;
-    min-height: 400px;
+.film-item > div {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.item-info h2 {
-    font-weight: 900;
-    color: #ffffff;
+.film-item .caption {
+  background-color: white;
+  font-weight: lighter;
+  height: auto;
+  width: auto;
+  padding: 1vh 1vw;
 }
 
-.item-info span {
-    color: #cfcfcf;
-    font-style: italic;
-    font-size: 0.9em;
-    padding-top: 5px;
+.film-item .caption h2 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+#diy {
+  background-image: url('work/thumbs/dead\ in\ yellow.png');
+}
+
+#fagot {
+  background-image: url('work/thumbs/fagot.png');
 }
