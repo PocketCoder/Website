@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jake Williams | Dead in Yellow</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Roboto:100,400,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../main.css">
+
+        <link rel="icon" href="../../img/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../../color-thief.js"></script>
+        <script>
+            // Create colorThief object
+            var colorThief = new ColorThief();
+             
+            // Make sure everything is loaded
+            $(window).on('load', function() {
+                // Get image
+                var bg = $('header').css('background-image');
+                bg = bg.replace('url(','').replace(')','');
+                var sourceImage = bg;
+                // Get the dominant color of image
+                color = colorThief.getColor(sourceImage);
+                // Use the new color as background for body
+                $('nav').css('background-color', 'rgb(' + color + ')');
+            });
+        </script>
+	</head>
+	<body class="home">
+		<nav>
+			<ul>
+				<div id="float">
+					<li><a href="../../">home.</a></li>
+					<li><a href="../../showreel/">showreel.</a></li>
+					<li><a href="../" class="active">work.</a></li>
+					<li><a href="../../cv/">cv.</a></li>
+					<li><a href="../../contact/">contact.</a></li>
+				</div>
+			</ul>
+		</nav>
+		<main class="film-page">
+			<header id="diy">
+                <h1>Dead in Yellow</h1>
+            </header>
+		</main>
+	</body>
+</html>
