@@ -162,10 +162,10 @@ main.work {
 }
 
 .film-item {
-  width: 25vw;
-  height: 30vh;
+  width: 40vw;
+  height: auto;
   transition: all 0.5s ease-in-out;
-  margin: 2vh 2vw;
+  margin: 2vh 0.5vw;
 }
 
 .film-item:hover {
@@ -175,9 +175,11 @@ main.work {
 }
 
 .film-item > div {
-  height: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  overflow: hidden;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
