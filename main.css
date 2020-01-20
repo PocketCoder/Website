@@ -9,7 +9,7 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 	scroll-behavior: smooth;
   opacity: 1;
-  transition: 2s opacity;
+  transition: 1s opacity;
 }
 
 body.fade-out {
