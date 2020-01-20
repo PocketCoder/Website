@@ -146,14 +146,6 @@ main:not(.film-page) section {
 	margin: 0 auto;
 }
 
-#showreel iframe, .iframe-container iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 #cv {
 	min-height: 100%;
 }
@@ -268,6 +260,11 @@ main.film-page header span {
   font-family: 'Josefin Sans', cursive;
 }
 
+main.film-page header span a {
+  text-decoration: underline;
+  color: inherit;
+}
+
 main.film-page header#diy h1 {
   color: #292a2d;
   background-color: #ffe100;
@@ -276,6 +273,10 @@ main.film-page header#diy h1 {
 main.film-page header#diy span {
   color: #292a2d;
   background-color: #ffe100; 
+}
+
+main.film-page header#fagot span {
+  margin-top: -30vh;
 }
 
 main.film-page section {
@@ -347,6 +348,16 @@ main.film-page section div.personnel #line {
 
 main.film-page .iframe-container {
   padding-top: 0;
+  width: 100%;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
 }
 
 main.film-page .slick {
@@ -359,7 +370,22 @@ main.film-page .slick-nav {
   margin: 0 auto 10vh auto;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.slick-prev:before, .slick-next:before {
   color: black !important;
+}
+
+/* Animations */
+
+[data-aos="shadow-pop-br"] {
+  -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+  box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+  -webkit-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+}
+
+[data-aos="shadow-pop-br"].aos-animate {
+  -webkit-box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+  box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+  -webkit-transform: translateX(-8px) translateY(-8px);
+  transform: translateX(-8px) translateY(-8px);
 }
