@@ -335,8 +335,7 @@ main.film-page section div.personnel #line {
 }
 
 .me {
-  border: 3px solid rgba(0, 0, 0, .25);
-  padding: 2%;
+ /* TODO */
 }
 
 main.film-page .iframe-container {
@@ -345,5 +344,15 @@ main.film-page .iframe-container {
 
 main.film-page .slick {
   width: 90%;
-  margin: 15vh auto;
+  margin: 0 auto 2vh auto;
+}
+
+main.film-page .slick-nav {
+  width: 95%;
+  margin: 0 auto 10vh auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
 }
