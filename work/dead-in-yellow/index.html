@@ -5,32 +5,19 @@
 
 		<title>Jake Williams | Dead in Yellow</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Roboto:100,400,900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="../../main.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bebas+Neue|Josefin+Sans:400,700|Open+Sans:400,700&display=swap">
+		<link rel="stylesheet" type="text/css" href="../../main.css">
 
         <link rel="icon" href="../../img/favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon"/>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="../../color-thief.js"></script>
-        <script>
-            // Create colorThief object
-            var colorThief = new ColorThief();
-             
-            // Make sure everything is loaded
-            $(window).on('load', function() {
-                // Get image
-                var bg = $('header').css('background-image');
-                bg = bg.replace('url(','').replace(')','');
-                var sourceImage = bg;
-                // Get the dominant color of image
-                color = colorThief.getColor(sourceImage);
-                // Use the new color as background for body
-                $('nav').css('background-color', 'rgb(' + color + ')');
-            });
-        </script>
+        <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+        <script type="text/javascript" src="../slick/slick.min.js"></script>
 	</head>
-	<body class="home">
+	<body>
 		<nav>
 			<ul>
 				<div id="float">
@@ -48,11 +35,76 @@
                 <span>coming may 2020</span>
             </header>
             <section class="main">
-                <h2>A coming-of-age drama following a teenager forced out of the closet.</h2>
+                <div class="logline">
+                    <h2>A coming-of-age drama <br/>following a teenager <br/>forced out of the closet.</h2>
+                </div>
+                <div class="personnel">
+                    <h2>cast and crew:</h2>
+                    <div id="break"></div>
+                    <!--Crew-->
+                    <div class="group">
+                        <h3>producer.</h3>
+                        <span>Jacques Wild</span>
+                    </div>
+                    <div class="group me">
+                        <h3>director.</h3>
+                        <span>Jake Williams</span>
+                    </div>
+                    <div class="group">
+                        <h3>cinematographer.</h3>
+                        <span>Brooke Angus</span>
+                    </div>
+                    <div class="group">
+                        <h3>editor & sound.</h3>
+                        <span>Jack Ashton</span>
+                    </div>
+                    <div id="break"></div>
+                    <div id="line"></div>
+                    <div id="break"></div>
+                    <!--Cast-->
+                    <div class="group">
+                        <h3>Matthew.</h3>
+                        <span>Ned Wakely</span>
+                    </div>
+                    <div class="group">
+                        <h3>Daniel.</h3>
+                        <span>Alex ...</span>
+                    </div>
+                    <div class="group">
+                        <h3>Mark.</h3>
+                        <span>Wynne ...</span>
+                    </div>
+                    <div class="group">
+                        <h3>Sarah.</h3>
+                        <span>Corinne Strickett</span>
+                    </div>
+                    <div class="group">
+                        <h3>Sylvia.</h3>
+                        <span>Someone ...</span>
+                    </div>
+                    <div class="group">
+                        <h3>Jessica.</h3>
+                        <span>Someone ...</span>
+                    </div>
+                </div>
                 <div class="iframe-container">
                     <iframe src="https://player.vimeo.com/video/331249831" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
+                <div class="slick">
+                    <img src="https://dummyimage.com/4096x1743/000000/ffffff.png">
+                   <img src="https://dummyimage.com/4096x1743/000000/ffffff.png">
+                   <img src="https://dummyimage.com/4096x1743/000000/ffffff.png">
+                </div>
             </section>
 		</main>
+        <script>
+            $(document).ready(function(){
+              $('.slick').slick({
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 5000
+              });
+            });
+        </script>
 	</body>
 </html>
