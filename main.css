@@ -159,6 +159,30 @@ main:not(.film-page) section {
 }
 
 main#work {
+  margin: 10% 2vw 0 2vw;
+  width: 100%;
+}
+
+.film-item {
+  margin-bottom: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.film-item img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.film-item:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+/*
+
+main#work {
   display: flex;
   -webkit-display: flex;
   justify-content: center;
@@ -225,6 +249,7 @@ main#work {
   height: 0;
   flex-basis: 100%;
 }
+*/
 
 #diy {
   background-image: url('work/thumbs/dead in yellow.jpg');
@@ -382,4 +407,24 @@ main.film-page .slick-nav {
   box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
   -webkit-transform: translateX(-8px) translateY(-8px);
   transform: translateX(-8px) translateY(-8px);
+}
+
+@-webkit-keyframes opacityPulse {
+    0% {
+      opacity: 0.25;
+    }
+    
+    50% {
+      opacity: 1.0;
+    }
+
+    100% {
+      opacity: 0.25;
+    }
+}
+
+.opacityPulse-css {
+    animation: opacityPulse 2s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 1;
 }
