@@ -183,7 +183,6 @@ main#work {
 }
 
 /*
-
 main#work {
   display: flex;
   -webkit-display: flex;
@@ -245,13 +244,14 @@ main#work {
   font-size: 1em;
   font-style: italic;
 }
+*/
 
 #break {
   width: 0;
   height: 0;
   flex-basis: 100%;
 }
-*/
+
 
 #diy {
   background-image: url('work/thumbs/dead in yellow.jpg');
