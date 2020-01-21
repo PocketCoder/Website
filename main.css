@@ -167,6 +167,7 @@ main#work {
   margin-bottom: 24px;
   border-radius: 4px;
   overflow: hidden;
+  transition: all ease-in-out 0.5s;
 }
 
 .film-item img {
@@ -178,6 +179,7 @@ main#work {
 .film-item:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
 }
 
 /*
