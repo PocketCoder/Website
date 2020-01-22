@@ -10,6 +10,7 @@ html, body {
 	scroll-behavior: smooth;
   opacity: 1;
   transition: 1s opacity;
+  overflow-x: hidden;
 }
 
 body.fade-out {
@@ -33,7 +34,7 @@ body {
   transition: all 1s ease-in-out;
 }
 
-header {
+header.nav {
 	display: flex;
 	-webkit-display:  flex;
 	justify-content: space-between;
@@ -47,7 +48,7 @@ header {
   top: 0;
 }
 
-header h1 {
+header.nav h1 {
 	padding-left: 4vh;
 	font-size: 2em;
 	font-style: italic;
@@ -55,7 +56,7 @@ header h1 {
 
 nav ul {
 	list-style: none;
-	padding-right: 4vw;
+  padding-right: 4vw;
 }
 
 nav ul li {
@@ -94,66 +95,6 @@ a.u:hover:before, a.u.active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
-/*
-
-nav {
-	height: 10%;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	display: flex;
-	-webkit-display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	z-index: 1;
-}
-
-ul {
-	list-style: none;
-	width: 100%;
-}
-
-#float {
-	float: right;
-	width: 30%;
-}
-
-li {
-	display: inline;
-	padding: 2%;
-	font-size: 0.85em;
-}
-
-nav a {
-	text-decoration: none;
-	color: #313132;
-  position: relative;
-  transition: all 1s ease-in-out;
-}
-
-nav a:before, nav a.active:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -15%;
-  left: 0;
-  background-color: #000;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-nav a:hover:before, nav a.active:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-*/
 
 #pantone {
 	height: 450px;
@@ -260,76 +201,11 @@ main#work {
   transition: all ease-in-out 0.5s;
 }
 
-/*
-main#work {
-  display: flex;
-  -webkit-display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
-  width: 100%;
-}
-
-.films {
-  width: 100%;
-  min-height: 25vh;
-  display: flex;
-  -webkit-display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.film-item {
-  width: 35vw;
-  height: auto;
-  transition: all 0.5s ease-in-out;
-  margin: 0.5vh 0.5vw;
-}
-
-.film-item:hover {
-  cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transform: scale(1.1);
-  transition: all 0.5s ease-in-out;
-}
-
-.film-item a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.film-item a > div {
-  height: 0;
-  padding-top: 56.25%;
-  overflow: hidden;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.film-item .caption {
-  background-color: white;
-  font-weight: lighter;
-  height: auto;
-  width: auto;
-  padding: 1vh 1vw;
-}
-
-.film-item .caption h2 {
-  font-size: 1em;
-  font-style: italic;
-}
-*/
-
 #break {
   width: 0;
   height: 0;
   flex-basis: 100%;
 }
-
 
 #diy {
   background-image: url('work/thumbs/dead in yellow.jpg');
@@ -461,12 +337,7 @@ main.film-page section div.personnel #line {
 
 main.film-page .slick {
   width: 90%;
-  margin: 0 auto 2vh auto;
-}
-
-main.film-page .slick-nav {
-  width: 95%;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 15vh auto;
 }
 
 .slick-prev:before, .slick-next:before {

@@ -22,8 +22,20 @@
         <script src="../aos/aos.js"></script>
 	</head>
 	<body>
+        <header class="nav">
+			<h1><a href="../" class="u">jake williams.</a></h1>
+			<nav>
+				<ul>
+					<li><a href="/" class="u active">home.</a></li>
+					<li><a href="showreel/" class="u">showreel.</a></li>
+					<li><a href="work/" class="u">work.</a></li>
+					<li><a href="cv/" class="u">c.v.</a></li>
+					<li><a href="contact/" class="u">contact.</a></li>
+				</ul>
+			</nav>
+		</header>
 		<main class="film-page">
-			<header id="diy">
+			<header id="diy" class="film-header">
                 <h1>Dead in Yellow</h1>
                 <span>coming may 2020</span>
             </header>
@@ -87,39 +99,21 @@
                     <img src="frames/1.jpg">
                     <img src="frames/2.jpg">
                     <img src="frames/3.jpg">
-                    <img src="https://dummyimage.com/4096x1743/000000/ffffff.png&text=4">
-                    <img src="https://dummyimage.com/4096x1743/000000/ffffff.png&text=5">
                 </div>
-                <div class="slick-nav" data-aos="zoom-in-up" data-aos-delay="100">
-                        <img src="frames/1.jpg">
-                        <img src="frames/2.jpg">
-                        <img src="frames/3.jpg">
-                        <img src="https://dummyimage.com/4096x1743/000000/ffffff.png&text=4">
-                        <img src="https://dummyimage.com/4096x1743/000000/ffffff.png&text=5">
-                    </div>
             </section>
-		</main>
+        </main>
+        <script src="https://player.vimeo.com/api/player.js"></script>
         <script>
             $(document).ready(function() {
                 $('.slick').slick({
                     infinite: true,
                     autoplay: true,
                     autoplaySpeed: 5000,
-                    arrows: false,
+                    arrows: true,
                     draggable: true,
                     adaptiveHeight: false,
-                    dots: false,
-                    pauseOnDotsHover: true,
-                    asNavFor: '.slick-nav'
-                });
-
-                $('.slick-nav').slick({
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    asNavFor: '.slick',
-                    centerMode: true,
-                    focusOnSelect: true,
-                    arrows: true
+                    dots: true,
+                    pauseOnDotsHover: true
                 });
             });
 
@@ -128,6 +122,42 @@
                 $('body').removeClass('fade-out');
                 AOS.init();
             });
+
+            $.fn.inView = function(inViewType){
+                var viewport = {};
+                viewport.top = $(window).scrollTop();
+                viewport.bottom = viewport.top + $(window).height();
+                var bounds = {};
+                bounds.top = this.offset().top;
+                bounds.bottom = bounds.top + this.outerHeight();
+                switch(inViewType){
+                case 'bottomOnly':
+                    return ((bounds.bottom <= viewport.bottom) && (bounds.bottom >= viewport.top));
+                case 'topOnly':
+                    return ((bounds.top <= viewport.bottom) && (bounds.top >= viewport.top));
+                case 'both':
+                    return ((bounds.top >= viewport.top) && (bounds.bottom <= viewport.bottom));         
+                default:     
+                    return ((bounds.top >= viewport.top) && (bounds.bottom <= viewport.bottom));      
+                }
+            };
+
+            $(window).scroll(function() {
+                if ($('.slick').inView('both')) {
+                $('body').addClass('dimmed');
+                } else {
+                    $('body').removeClass('dimmed');
+                }
+            });
+
+            var iframe = document.querySelector('iframe');
+			var player = new Vimeo.Player(iframe);
+			player.on('play', function() {
+				$('body').addClass('dimmed');
+			});
+			player.on('pause',function() {
+				$('body').removeClass('dimmed');
+			});
         </script>
 	</body>
 </html>

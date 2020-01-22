@@ -43,10 +43,10 @@
 			var iframe = document.querySelector('iframe');
 			var player = new Vimeo.Player(iframe);
 			player.on('play', function() {
-				$('body').toggleClass('dimmed');
+				$('body').addClass('dimmed');
 			});
 			player.on('pause',function() {
-				$('body').toggleClass('dimmed');
+				$('body').removeClass('dimmed');
 			});
 
 			document.body.className += ' fade-out';
