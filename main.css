@@ -33,6 +33,70 @@ body {
   transition: all 1s ease-in-out;
 }
 
+header {
+	display: flex;
+	-webkit-display:  flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	position: fixed;
+	height: 10vh;
+	width: 100vw;
+	color: #292a2d;
+  z-index: 9999;
+  top: 0;
+}
+
+header h1 {
+	padding-left: 4vh;
+	font-size: 2em;
+	font-style: italic;
+}
+
+nav ul {
+	list-style: none;
+	padding-right: 4vw;
+}
+
+nav ul li {
+  padding: 4vh 1vw;
+	float: left;
+	font-size: 0.85em;
+}
+
+a.u {
+	text-decoration: none;
+  color: #313132;
+  transition: all 1s ease-in-out;
+}
+
+a.u {
+  position: relative;
+}
+
+a.u:before, a.u.active:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a.u:hover:before, a.u.active:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*
+
 nav {
 	height: 10%;
 	width: 100%;
@@ -88,6 +152,8 @@ nav a:hover:before, nav a.active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+*/
 
 #pantone {
 	height: 450px;
