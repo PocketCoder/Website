@@ -175,10 +175,6 @@ main:not(.film-page) section {
   /* FIXME Colour for dimmed h1*/
 }
 
-#cv {
-	min-height: 100%;
-}
-
 main#work {
   margin: 10% 2vw 0 2vw;
   width: 100%;
