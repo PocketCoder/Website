@@ -353,11 +353,16 @@ main.film-page .slick {
 .script-container {
   min-height: 50%;
   width: 100%;
+  display: flex;
+  -webkit-display: flex;
+  align-content: space-around;
+  flex-flow: column wrap;
+  height: 100%;
+  padding-bottom: 25vh;
 }
 
 .script {
-  width: 50%;
-  margin: 0 auto;
+  width: 600px;
   background: whitesmoke;
   padding: 4vh 4vw;
 }
