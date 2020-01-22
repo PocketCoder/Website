@@ -29,7 +29,8 @@ body {
 	display: flex;
 	-webkit-display: flex;
 	justify-content: center;
-	align-items: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
 }
 
 nav {
@@ -63,7 +64,8 @@ li {
 nav a {
 	text-decoration: none;
 	color: #313132;
-	position: relative;
+  position: relative;
+  transition: all 1s ease-in-out;
 }
 
 nav a:before, nav a.active:before {
@@ -154,6 +156,16 @@ main:not(.film-page) section {
   height: 100%;
 }
 
+.dimmed {
+  background-color: #313132;
+  transition: all 1s ease-in-out;
+}
+
+.dimmed nav a {
+  color: #fedbf4;
+  transition: all 1s ease-in-out;
+}
+
 #cv {
 	min-height: 100%;
 }
@@ -165,7 +177,6 @@ main#work {
 
 .film-item {
   margin-bottom: 24px;
-  border-radius: 4px;
   overflow: hidden;
   transition: all ease-in-out 0.5s;
 }
@@ -174,6 +185,7 @@ main#work {
   width: 100%;
   display: block;
   height: auto;
+  border-radius: 4px;
 }
 
 .film-item:hover {
