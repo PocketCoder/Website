@@ -5,24 +5,16 @@
 
 html, body {
 	height: 100%;
-	width: 100%;
+  width: 100%;
 	font-family: 'Open Sans', sans-serif;
 	scroll-behavior: smooth;
   opacity: 1;
   transition: 1s opacity;
-  overflow-x: hidden;
 }
 
 body.fade-out {
     opacity: 0;
     transition: none;
-}
-
-div.unfinished {
-  position: fixed;
-  height: 10%;
-  padding: 3%;
-  bottom: 0;
 }
 
 body {
