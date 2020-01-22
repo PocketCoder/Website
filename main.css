@@ -1,3 +1,5 @@
+/* TODO: Repsonsive */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -338,7 +340,8 @@ main.film-page .iframe-container iframe {
   width: 80%;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
-       box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  /* FIXME: Box shadow doesn't resize right*/  
 }
 
 main.film-page .slick {
