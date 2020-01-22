@@ -406,6 +406,26 @@ main.film-page .slick {
   padding-bottom: 1.5ex;
 }
 
+main.contact {
+  height: 90%;
+  display: flex;
+	-webkit-display: flex;
+	justify-content: space-around;
+  align-items: center;
+}
+
+main.contact div {
+  margin: 10vh 0;
+}
+
+main.contact h1 {
+  font-size: 4em;
+}
+
+main.contact div span {
+  font-size: 1.5em;
+}
+
 /* Animations */
 
 [data-aos="shadow-pop-br"] {
