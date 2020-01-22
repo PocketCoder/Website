@@ -489,6 +489,20 @@ main.film-page .slick-nav {
   transform: translateX(-8px) translateY(-8px);
 }
 
+@keyframes opacityPulse {
+  0% {
+    opacity: 0.25;
+  }
+  
+  50% {
+    opacity: 1.0;
+  }
+
+  100% {
+    opacity: 0.25;
+  }
+}
+
 @-webkit-keyframes opacityPulse {
     0% {
       opacity: 0.25;
