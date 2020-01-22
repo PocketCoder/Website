@@ -45,7 +45,9 @@ header.nav {
 header.nav h1 {
 	padding-left: 4vh;
 	font-size: 2em;
-	font-style: italic;
+  font-style: italic;
+  color: #292a2d;
+  transition: all 1s ease-in-out;
 }
 
 nav ul {
@@ -167,6 +169,12 @@ main:not(.film-page) section {
   transition: all 1s ease-in-out;
 }
 
+.dimmed .nav h1 {
+  color: #fedbf4;
+  transition: all 1s ease-in-out;
+  /* FIXME Colour for dimmed h1*/
+}
+
 #cv {
 	min-height: 100%;
 }
@@ -202,11 +210,16 @@ main#work {
 }
 
 #diy {
-  background-image: url('work/thumbs/dead in yellow.jpg');
+  background-image: url('work/thumbs/dead\ in\ yellow.jpg');
 }
 
 #fagot {
   background-image: url('work/thumbs/fagot.png');
+}
+
+#wayc {
+  background-image: url('work/thumbs/we\ are\ your\ children.png');
+  background-color: rgb(16, 16, 20);
 }
 
 main.film-page {
