@@ -134,7 +134,7 @@ main:not(.film-page) section {
 	padding: 5vh 5vw;
 }
 
-#showreel, .iframe-container {
+#showreel {
   width: 80%;
   display: flex;
   -webkit-display: flex;
@@ -147,7 +147,7 @@ main:not(.film-page) section {
   margin: 0 auto;
  }
 
-#showreel iframe, .iframe-container iframe {
+#showreel iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -323,6 +323,24 @@ main.film-page section div.personnel #line {
   height: 0%;
 }
 
+main.film-page .iframe-container {
+  height: 100%;
+  width: 100%;
+  margin: 50vh auto 10vh auto;
+  display: flex;
+	-webkit-display: flex;
+	justify-content: center;
+  align-items: center;
+ }
+
+main.film-page .iframe-container iframe {
+  height: 80%;
+  width: 80%;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+       box-shadow: 0 10px 6px -6px #777;
+}
+
 main.film-page .slick {
   width: 90%;
   margin: 0 auto 15vh auto;
@@ -330,6 +348,54 @@ main.film-page .slick {
 
 .slick-prev:before, .slick-next:before {
   color: black !important;
+}
+
+.script-container {
+  min-height: 50%;
+  width: 100%;
+}
+
+.script {
+  width: 50%;
+  margin: 0 auto;
+  background: whitesmoke;
+  padding: 4vh 4vw;
+}
+
+.screenbox li {
+  font: 14px Courier, fixed;
+  text-decoration: none;
+  list-style: none;
+}
+
+.sceneheader, .action, .character {
+  padding-top: 1.5ex;
+}
+
+.action {
+  padding-right: 5%;
+}
+
+.character {
+  margin-left: 40%;
+}
+
+.dialogue {
+  margin-left: 25%; padding-right: 25%;
+}
+
+.parenthetical {
+  margin-left: 32%; padding-right: 30%;
+}
+
+.dialogue + .parenthetical {
+  padding-bottom: 0;
+}
+
+.transition {
+  padding-top: 3ex;
+  margin-left: 65%;
+  padding-bottom: 1.5ex;
 }
 
 /* Animations */

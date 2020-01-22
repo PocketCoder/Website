@@ -92,13 +92,28 @@
                         <span>Someone ...</span>
                     </div>
                 </div>
-                <div class="iframe-container" data-aos="zoom-in" data-aos-delay="100">
-                    <iframe src="https://player.vimeo.com/video/331249831" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <div class="iframe-container">
+                    <iframe src="https://player.vimeo.com/video/331249831" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="effect4"></iframe>
                 </div>
-                <div class="slick" data-aos="zoom-out" data-aos-delay="100">
+                <div class="slick">
                     <img src="frames/1.jpg">
                     <img src="frames/2.jpg">
                     <img src="frames/3.jpg">
+                </div>
+                <div class="script-container">
+                    <div class="script">
+                        <code>
+                            <ul class="screenbox">
+                                <li class="sceneheader">EXT. STREET - NIGHT</li>
+                                <li class="action">Faint drops of rain begin to fall as we follow Matthew down the street.</li>
+                                <li class="action">Beams of light from the street lights take it in turns to illuminate Matthew’s face in the night.</li>
+                                <li class="action">Each glimpse we get of him reveals more and more his slow decent into despair.</li>
+                                <li class="action">He shakily tries to roll a cigarette but he gives up, he isn't in control of his hands.</li>
+                                <li class="action">His eyes are bleary. He marches on, angry and in the midst of panic.</li>
+                                <li class="action">Daniel appears in the distance, jogging behind him. Calling out to him:</li>
+                            </ul>
+                        </code>
+                    </div>
                 </div>
             </section>
         </main>
@@ -142,22 +157,28 @@
                 }
             };
 
-            $(window).scroll(function() {
-                if ($('.slick').inView('both')) {
-                $('body').addClass('dimmed');
-                } else {
-                    $('body').removeClass('dimmed');
-                }
-            });
+            var play = false;
 
             var iframe = document.querySelector('iframe');
 			var player = new Vimeo.Player(iframe);
 			player.on('play', function() {
-				$('body').addClass('dimmed');
-			});
+                $('body').addClass('dimmed');
+                play = true;
+            });
 			player.on('pause',function() {
-				$('body').removeClass('dimmed');
-			});
+                $('body').removeClass('dimmed');
+                play = false;
+            });
+            
+            $(window).scroll(function() {
+                if ($('.slick').inView('both')) {
+                    $('body').addClass('dimmed');
+                    console.log(play);
+                    console.log($('.slick').inView('both'));
+                } else {
+                    $('body').removeClass('dimmed');
+                }
+            });
         </script>
 	</body>
 </html>
