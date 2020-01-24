@@ -217,6 +217,7 @@
             $(window).scroll(function() {
                 if ($('.slick').inView('both')) {
                     $('body').addClass('dimmed');
+                    /* FIXME: Doesn't dim elements above it */
                 } else {
                     $('body').removeClass('dimmed');
                 }
