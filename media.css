@@ -1,14 +1,23 @@
 @media only screen and (max-width: 800px) {
+
+    .nav nav {
+        margin: 0 auto 0 auto;
+    }
+
     .home .nav nav {
         margin: 15vh auto 0 auto;
     }
 
-    .home .nav nav ul {
+    .nav nav ul {
         padding: 0;
     }
 
     .no-mobile {
         display: none;
+    }
+
+    #macy-container {
+        margin-top: 10vh;
     }
 
     main.film-page section div.logline, main.film-page section div.personnel {
