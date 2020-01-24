@@ -22,6 +22,25 @@
         height: 0;
         flex-basis: 100%;
     }
+
+    .film-header.fagot {
+        background-position: left;
+    }
+    
+    main.film-page .iframe-container {
+        height: 80%;
+        width: 100%;
+        margin: 0 auto 15vh auto;
+        display: flex;
+        -webkit-display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    main.film-page .iframe-container iframe {
+        height: 80%;
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 1350px) {

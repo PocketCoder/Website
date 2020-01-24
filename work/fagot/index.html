@@ -38,36 +38,40 @@
 			</nav>
 		</header>
 		<main class="film-page">
-			<header id="fagot" class="film-header">
+			<header id="fagot" class="film-header fagot">
                 <span class="opacityPulse-css"><a href="#main">scroll for more.</a></span>
             </header>
             <section class="main" id="main">
-                <div class="logline">
-                    <h2 data-aos="shadow-pop-br" data-aos-delay="400">an experimental film focusing on heternormativity and homophobia in media and life</h2>
+                <div class="top">
+                    <div class="logline" data-aos="shadow-pop-br" data-aos-delay="400">
+                        <h2>an experimental film focusing on heternormativity and homophobia in media and life</h2>
+                    </div>
                 </div>
-                <div class="personnel" data-aos="shadow-pop-br" data-aos-delay="500">
-                    <h2>cast and crew:</h2>
-                    <div id="break"></div>
-                    <!--Crew-->
-                    <div class="group">
-                        <h3>a film by.</h3>
-                        <span>Jake Williams</span>
-                    </div>
-                    <div class="group">
-                        <h3>cinematographer.</h3>
-                        <span>Brooke Angus</span>
-                    </div>
-                    <div id="break"></div>
-                    <div id="line"></div>
-                    <div id="break"></div>
-                    <!--Cast-->
-                    <div class="group">
-                        <h3>boy.</h3>
-                        <span>Sammy Hewett</span>
-                    </div>
-                    <div class="group">
-                        <h3>girl.</h3>
-                        <span>Someone ...</span>
+                <div class="bottom">
+                    <div class="personnel" data-aos="shadow-pop-br" data-aos-delay="500">
+                        <h2>cast and crew:</h2>
+                        <div id="break"></div>
+                        <!--Crew-->
+                        <div class="group">
+                            <h3>a film by.</h3>
+                            <span>Jake Williams</span>
+                        </div>
+                        <div class="group">
+                            <h3>cinematographer.</h3>
+                            <span>Brooke Angus</span>
+                        </div>
+                        <div id="break"></div>
+                        <div id="line"></div>
+                        <div id="break"></div>
+                        <!--Cast-->
+                        <div class="group">
+                            <h3>boy.</h3>
+                            <span>Sammy Hewett</span>
+                        </div>
+                        <div class="group">
+                            <h3>girl.</h3>
+                            <span>Someone ...</span>
+                        </div>
                     </div>
                 </div>
                 <div class="iframe-container">
@@ -140,8 +144,6 @@
             $(window).scroll(function() {
                 if ($('.slick').inView('both')) {
                     $('body').addClass('dimmed');
-                    console.log(play);
-                    console.log($('.slick').inView('both'));
                 } else {
                     $('body').removeClass('dimmed');
                 }

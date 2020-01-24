@@ -215,6 +215,7 @@ main.film-page header {
   width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   -webkit-display: flex;
   flex-direction: column;
@@ -255,7 +256,7 @@ main.film-page header#diy span {
 }
 
 main.film-page header#fagot span {
-  margin-top: -30vh;
+  margin-top: 60vh;
 }
 
 main.film-page section {
@@ -356,10 +357,6 @@ main.film-page .iframe-container {
 main.film-page .iframe-container iframe {
   height: 80%;
   width: 80%;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;
-  /* FIXME: Box shadow doesn't resize */  
 }
 
 main.film-page .slick {
@@ -469,13 +466,10 @@ main.contact div span {
   transition: all 1s ease-in-out;
 }
 
-.dimmed .nav h1 {
+.dimmed .nav h1 a {
   color: #fedbf4;
   transition: all 1s ease-in-out;
-  /* FIXME Colour for dimmed h1*/
 }
-
-
 
 /* Animations */
 
