@@ -2,30 +2,39 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Jake Williams | Showreel</title>
+		<title>Jake Williams | C.V.</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="../main.css">
+
+		<link rel="icon" href="../img/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
-	<body class="home">
-		<nav>
-			<ul>
-				<div id="float">
-					<li><a href="../">home.</a></li>
-					<li><a href="#" class="active">showreel.</a></li>
-					<li><a href="../work/">work.</a></li>
-					<li><a href="../cv/">cv.</a></li>
-					<li><a href="../contact/">contact.</a></li>
-				</div>
-			</ul>
-		</nav>
-		<main>
-			<section id="showreel">
-				<iframe src="https://player.vimeo.com/video/331249831" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-			</section>
+	<body>
+		<header class="nav">
+			<h1><a href="../" class="u">jake williams</a></h1>
+			<nav>
+				<ul>
+					<li><a href="../" class="u">home.</a></li>
+					<li><a href="../showreel/" class="u">showreel.</a></li>
+					<li><a href="../work/" class="u">work.</a></li>
+					<li><a href="../cv/" class="u active">c.v.</a></li>
+					<li><a href="../contact/" class="u">contact.</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="contact">
+			<h1>coming soon</h1>
 		</main>
+		<script>
+			document.body.className += ' fade-out';
+			$(function() {
+    			$('body').removeClass('fade-out');
+			});
+		</script>
 	</body>
 </html>
