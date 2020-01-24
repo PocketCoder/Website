@@ -200,24 +200,9 @@
                 }
             };
             
-            /*
-            var play = false;
-
-            var iframe = document.querySelector('iframe');
-		    var player = new Vimeo.Player(iframe);
-			player.on('play', function() {
-                $('body').addClass('dimmed');
-                play = true;
-            });
-			player.on('pause',function() {
-                $('body').removeClass('dimmed');
-                play = false;
-            });*/
-            
             $(window).scroll(function() {
                 if ($('.slick').inView('both')) {
                     $('body').addClass('dimmed');
-                    /* FIXME: Doesn't dim elements above it */
                 } else {
                     $('body').removeClass('dimmed');
                 }

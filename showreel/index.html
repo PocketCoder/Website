@@ -2,59 +2,42 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
 
 		<title>Jake Williams | Showreel</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bebas+Neue|Josefin+Sans:400,700|Open+Sans:400,700&display=swap" />
+        <link rel="stylesheet" type="text/css" href="../main.css" />
+        <link rel="stylesheet" type="text/css" href="../media.css" />
 
-        <link rel="icon" href="../img/favicon.ico" type="image/x-icon"/>
-		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
-		
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-		<style>
-			body {
-				overflow: hidden;
-			}
-		</style>
 	</head>
-	<body class="home">
+	<body>
 		<header class="nav">
-			<h1><a href="../" class="u">jake williams.</a></h1>
+			<h1><a href="../" class="u">jake williams</a></h1>
 			<nav>
 				<ul>
 					<li><a href="../" class="u">home.</a></li>
-					<li><a href="/" class="u active">showreel.</a></li>
+					<li><a href="../showreel/" class="u active">showreel.</a></li>
 					<li><a href="../work/" class="u">work.</a></li>
 					<li><a href="../cv/" class="u">c.v.</a></li>
 					<li><a href="../contact/" class="u">contact.</a></li>
 				</ul>
 			</nav>
 		</header>
-		<main>
-			
-			<section id="showreel">
-				<!--<iframe src="https://player.vimeo.com/video/331249831" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>-->
-				<h1>coming soon</h1>
-			</section>
+		<main class="contact">
+			<h1>coming soon</h1>
 		</main>
-		<script src="https://player.vimeo.com/api/player.js"></script>
 		<script>
-			var iframe = document.querySelector('iframe');
-			var player = new Vimeo.Player(iframe);
-			player.on('play', function() {
-				$('body').addClass('dimmed');
-			});
-			player.on('pause',function() {
-				$('body').removeClass('dimmed');
-			});
-
 			document.body.className += ' fade-out';
-            $(function() {
-                $('body').removeClass('fade-out');
-            });
+			$(function() {
+    			$('body').removeClass('fade-out');
+			});
 		</script>
 	</body>
 </html>

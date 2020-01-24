@@ -1,4 +1,16 @@
 @media only screen and (max-width: 800px) {
+    .home .nav nav {
+        margin: 15vh auto 0 auto;
+    }
+
+    .home .nav nav ul {
+        padding: 0;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
     main.film-page section div.logline, main.film-page section div.personnel {
         width: 80%;
         float: none;

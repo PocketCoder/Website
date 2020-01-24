@@ -28,6 +28,10 @@ body {
   transition: all 1s ease-in-out;
 }
 
+.no-mobile {
+  display: inherit;
+}
+
 header.nav {
 	display: flex;
 	-webkit-display:  flex;
@@ -434,6 +438,14 @@ main.film-page .slick {
 iframe.pdf {
   width: 90%;
   height: 100%;
+}
+
+main.soon {
+  height: 100%;
+  display: flex;
+	-webkit-display: flex;
+	justify-content: space-around;
+  align-items: center;
 }
 
 main.contact {
