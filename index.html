@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="HandheldFriendly" content="true">
-
-		<title>Jake Williams | Home</title>
+        
+        <title>Jake Williams</title>
 
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bebas+Neue|Josefin+Sans:400,700|Open+Sans:400,700&display=swap" />
         <link rel="stylesheet" type="text/css" href="main.css" />
-        <link rel="stylesheet" type="text/css" href="media.css" />
 
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	</head>
-	<body class="home">
-		<header class="nav">
-			<h1 class="no-mobile"></h1>
-			<nav>
-				<ul>
-					<li><a href="/" class="u active">home.</a></li>
-					<li><a href="showreel/" class="u">showreel.</a></li>
-					<li><a href="work/" class="u">work.</a></li>
-					<li><a href="cv/" class="u">c.v.</a></li>
-					<li><a href="contact/" class="u">contact.</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div id="pantone">
-			<div id="colour-space"></div>
-			<div id="text">
-				<h1 class="bold">Jake Williams</h1>
-				<span class="thin">producer. filmmaker.<br />writer.</span><br />
-			</div>
-		</div>
-		<script>
+    </head>
+    <body>
+        <main class="home">
+            <div id="outer"></div>
+            <div id="inner">
+                <div>
+                    <h1>Jake Williams</h1>
+                    <h3>filmmaker. writer.</h3>
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="showreel/">showreel.</a></li>
+                            <li><a href="work/">work.</a></li>
+                            <br />
+                            <li><a href="cv/">c.v.</a></li>
+                            <li><a href="contact/">contact.</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </main>
+        <script>
 			document.body.className += ' fade-out';
 			$(function() {
-				$('body').removeClass('fade-out');
+    			$('body').removeClass('fade-out');
 			});
 		</script>
-	</body>
+    </body>
 </html>

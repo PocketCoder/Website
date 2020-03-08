@@ -1,0 +1,71 @@
+@media only screen and (max-width: 800px) {
+
+    .nav nav {
+        margin: 0 auto 0 auto;
+    }
+
+    .home .nav nav {
+        margin: 15vh auto 0 auto;
+    }
+
+    .nav nav ul {
+        padding: 0;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
+    #macy-container {
+        margin-top: 10vh;
+    }
+
+    main.film-page section div.logline, main.film-page section div.personnel {
+        width: 80%;
+        float: none;
+    }
+
+    main.film-page section div.logline {
+        margin: 15vh auto 0 auto;
+    }
+
+    main.film-page section div.personnel {
+        margin: 0 auto 0 auto;
+    }
+
+    .script {
+        min-width: 100%;
+    }
+
+    #break-mobile {
+        display: inherit;
+        width: 0;
+        height: 0;
+        flex-basis: 100%;
+    }
+
+    .film-header.fagot {
+        background-position: left;
+    }
+    
+    main.film-page .iframe-container {
+        height: 80%;
+        width: 100%;
+        margin: 0 auto 15vh auto;
+        display: flex;
+        -webkit-display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    main.film-page .iframe-container iframe {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .script {
+        min-width: 70%;
+    }
+}

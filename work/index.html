@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="HandheldFriendly" content="true">
-
-		<title>Jake Williams | Work</title>
+        
+        <title>Jake Williams | Work</title>
 
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bebas+Neue|Josefin+Sans:400,700|Open+Sans:400,700&display=swap" />
         <link rel="stylesheet" type="text/css" href="../main.css" />
-        <link rel="stylesheet" type="text/css" href="../media.css" />
 
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<header class="nav">
-			<h1 class="no-mobile"><a href="../" class="u">jake williams.</a></h1 class="no-mobile">
+    </head>
+    <body>
+        <header class="nav">
+			<h1><a href="../">jake williams</a></h1>
 			<nav>
 				<ul>
-					<li><a href="../" class="u">home.</a></li>
-					<li><a href="../showreel/" class="u">showreel.</a></li>
-					<li><a href="/" class="u active">work.</a></li>
-					<li><a href="../cv/" class="u">c.v.</a></li>
-					<li><a href="../contact/" class="u">contact.</a></li>
+					<li><a href="../">home.</a></li>
+					<li><a href="../showreel/">showreel.</a></li>
+					<li><a href="../work/" class="active">work.</a></li>
+					<li><a href="../cv/">c.v.</a></li>
+					<li><a href="../contact/">contact.</a></li>
 				</ul>
 			</nav>
-		</header>
-        <main id="work">
-            <div id="macy-container">
-                <div class="film-item">
-                    <a href="dead-in-yellow/">
-                        <img src="thumbs/dead in yellow.jpg" alt="Dead in Yellow (2020)">
+        </header>
+        <main class="work">
+            <section class="films">
+                <section id="films" class="projects">
+                    <!--Dead in Yellow-->
+                    <a href="#" target="">
+                        <div class="item" style="background-image: url('../img/films/diy.jp2');">
+                            <div class="item-info">
+                                <h2>Dead in Yellow</h2>
+                                <span>(drama - 15 mins)</span>
+                                <span>coming soon</span>
+                            </div>
+                        </div>
                     </a>
-                </div>
-                <div class="film-item">
-                    <a href="we-are-your-children/">
-                        <img src="thumbs/we are your children.png" alt="We Are Your Children (2020)">
+                    <!--We Are Your Children-->
+                    <a href="https://vimeo.com/378257639" target="_blank">
+                        <div class="item" style="background-image: url('../img/films/wayc.png');">
+                            <div class="item-info">
+                                <h2>We Are Your Children</h2>
+                                <span>(experimental - 5 mins)</span>
+                                <span>december, 2020</span>
+                            </div>
+                        </div>
                     </a>
-                </div>
-                <div class="film-item">
-                    <a href="fagot/">
-                        <img src="thumbs/fagot.png" alt="fagot (2019)">
+                    <!--fagot-->
+                    <a href="https://vimeo.com/331249831" target="_blank">
+                        <div class="item" style="background-image: url('../img/films/fagot_bg.png');">
+                            <div class="item-info">
+                                <h2>fagot</h2>
+                                <span>(experimental - 5 mins)</span>
+                                <span>april, 2019</span>
+                            </div>
+                        </div>
                     </a>
-                </div>
-            </div>
+                </section>
+            </section>
         </main>
-        <script src="macy.js"></script>
         <script>
-            document.body.className += ' fade-out';
-            $(function() {
-                $('body').removeClass('fade-out');
-            });
-
-            Macy({
-                container: '#macy-container',
-                trueOrder: false,
-                waitForImages: false,
-                margin: 24,
-                columns: 3,
-                breakAt: {
-                    1200: 3,
-                    940: 2,
-                    520: 1,
-                    400: 1
-                }
-            });
-        </script>
-	</body>
+			document.body.className += ' fade-out';
+			$(function() {
+    			$('body').removeClass('fade-out');
+			});
+		</script>
+    </body>
 </html>
