@@ -242,17 +242,31 @@ main.contact {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-  }
+}
   
-  main.contact div {
+main.contact div {
     margin: 10vh 0;
-  }
+}
   
-  main.contact h1 {
+main.contact h1 {
     font-size: 4em;
-  }
+}
   
-  main.contact div span {
+main.contact div span {
     font-size: 1.5em;
     color: #3e3f42;
-  }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav nav {
+        margin: 0 auto 0 auto;
+    }
+
+    .nav nav ul {
+        padding: 0;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+}
