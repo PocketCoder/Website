@@ -123,6 +123,7 @@ main.home #outer {
 main.home #inner {
     height: 10vh;
     width: 30vw;
+    padding: 5vh 3vh;
     display: flex;
 	-webkit-display: flex;
     justify-content: center;
