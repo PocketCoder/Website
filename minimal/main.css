@@ -130,9 +130,9 @@ main.home #inner {
     opacity: 1;
     position: absolute;
     background: rgb(254,233,248);
-    background: -moz-radial-gradient(circle, rgba(254,233,248,1) 29%, rgba(254,233,248,0) 100%);
-    background: -webkit-radial-gradient(circle, rgba(254,233,248,1) 29%, rgba(254,233,248,0) 100%);
-    background: radial-gradient(circle, rgba(254,233,248,1) 29%, rgba(254,233,248,0) 100%);
+    background: -moz-linear-gradient(90deg, rgba(254,233,248,1) 0%, rgba(254,233,248,1) 60%, rgba(254,233,248,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(254,233,248,1) 0%, rgba(254,233,248,1) 60%, rgba(254,233,248,0) 100%);
+    background: linear-gradient(90deg, rgba(254,233,248,1) 0%, rgba(254,233,248,1) 60%, rgba(254,233,248,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fee9f8",endColorstr="#fee9f8",GradientType=1);
 }
 
