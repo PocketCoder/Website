@@ -241,17 +241,18 @@ main.contact {
     -webkit-display: flex;
     justify-content: space-around;
     align-items: center;
-}
+    flex-direction: row;
+  }
   
-main.contact div {
+  main.contact div {
     margin: 10vh 0;
-}
+  }
   
-main.contact h1 {
+  main.contact h1 {
     font-size: 4em;
-}
+  }
   
-main.contact div span {
+  main.contact div span {
     font-size: 1.5em;
     color: #3e3f42;
-}
+  }
