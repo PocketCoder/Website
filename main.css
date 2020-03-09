@@ -9,6 +9,7 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     opacity: 1;
     transition: all 1s ease-in-out;
+    background-color: #fedbf4;
 }
   
 body.fade-out {
@@ -235,6 +236,49 @@ main.home #inner h3 {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+main.cv .inner-flex {
+    padding-top: 5%;
+    max-width: 1500px;
+    width: 100%;
+    min-height: 80%;
+    height: 50%;
+    display: flex;
+	-webkit-display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inner-flex div.column {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+	-webkit-display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5vw;
+}
+
+.inner-flex div.column div.segment {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+	-webkit-display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner-flex div.column div.segment h1 {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.inner-flex div.column div.segment div {
+    padding-bottom: 10%;
 }
 
 main.contact {
