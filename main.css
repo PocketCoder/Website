@@ -107,7 +107,6 @@ main.home #outer {
 	-webkit-display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/bg/1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +114,6 @@ main.home #outer {
     width: 75vw;
     opacity: 0.5;
     border: 15px solid white;
-    transition: all 0.25s ease-in-out;
 }
 
 main.home #inner {
