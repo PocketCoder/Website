@@ -108,6 +108,7 @@ main.home #outer {
     justify-content: center;
     align-items: center;
     background-image: url(img/bg/1.jpg);
+    transition: all 1s ease-in-out;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
