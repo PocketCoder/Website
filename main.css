@@ -256,7 +256,7 @@ main.contact div span {
     color: #3e3f42;
 }
 
-@media only screen and (max-width: 1000px) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (max-width: 1000px) {
     .nav nav {
         margin: 0 auto 0 auto;
     }
@@ -282,7 +282,7 @@ main.contact div span {
     }
 }
 
-@media only screen and (max-width: 1200px) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (max-width: 1200px) {
     .films {
         margin-top: 10vh;
     }
@@ -305,5 +305,35 @@ main.contact div span {
 
     .films {
         margin-top: 60vh;
+    }
+}
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+    .nav nav {
+        margin: 0 auto 0 auto;
+    }
+
+    .nav nav ul {
+        padding: 0;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
+    main.contact {
+        align-content: center;
+    }
+
+    main.contact h1 {
+        font-size: 3em;
+    }
+
+    main.contact div {
+        margin: 0;
+    }
+    
+    .films {
+        margin-top: 10vh;
     }
 }
