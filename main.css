@@ -53,12 +53,6 @@ a:hover:before, a.active:before {
     transform: scaleX(1);
 }
 
-#break {
-    width: 0;
-    height: 0;
-    flex-basis: 100%;
-}
-
 header.nav {
 	display: flex;
 	-webkit-display:  flex;
@@ -244,6 +238,7 @@ main.contact {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
   
 main.contact div {
@@ -259,7 +254,7 @@ main.contact div span {
     color: #3e3f42;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .nav nav {
         margin: 0 auto 0 auto;
     }
@@ -270,5 +265,43 @@ main.contact div span {
 
     .no-mobile {
         display: none;
+    }
+
+    main.contact {
+        align-content: center;
+    }
+
+    main.contact h1 {
+        font-size: 3em;
+    }
+
+    main.contact div {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .films {
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main.home #outer {
+        height: 90vh;
+        width: 80vw;
+    }
+    
+    main.home #inner {
+        width: 100%;
+        background: rgb(254,233,248);
+    }
+    
+    header.nav h1 {
+        font-size: 1.5em;
+    }
+
+    .films {
+        margin-top: 60vh;
     }
 }
