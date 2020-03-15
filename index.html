@@ -48,10 +48,8 @@
                     type:'HEAD',
                     error: function() {
                         $('#outer').css('background-image', 'url(img/bg/' + num + '.png');
-                        console.log('error');
                     }, success: function() {
                         $('#outer').css('background-image', 'url(img/bg/' + num + '.jpg');
-                        console.log('success');
                     }
                 });
 			});
