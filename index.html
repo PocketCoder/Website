@@ -40,7 +40,10 @@
         <script>
 			document.body.className += ' fade-out';
 			$(function() {
-    			$('body').removeClass('fade-out');
+                $('body').removeClass('fade-out');
+                var max = 4;
+                var num = Math.floor(Math.random() * max) + 1;
+                $('#outer').css('background-image', 'url(img/bg/' + num + '.jpg');
 			});
 		</script>
     </body>

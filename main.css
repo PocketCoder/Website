@@ -107,7 +107,7 @@ main.home #outer {
 	-webkit-display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/bg.jpg);
+    background-image: url(img/bg/1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
