@@ -41,9 +41,19 @@
 			document.body.className += ' fade-out';
 			$(function() {
                 $('body').removeClass('fade-out');
-                var max = 4;
+                var max = 22;
                 var num = Math.floor(Math.random() * max) + 1;
-                $('#outer').css('background-image', 'url(img/bg/' + num + '.jpg');
+                $.ajax({
+                    url:'http://110399.xyz/img/bg/' + num + '.jpg',
+                    type:'HEAD',
+                    error: function() {
+                        $('#outer').css('background-image', 'url(img/bg/' + num + '.png');
+                        console.log('error');
+                    }, success: function() {
+                        $('#outer').css('background-image', 'url(img/bg/' + num + '.jpg');
+                        conole.log('success');
+                    }
+                });
 			});
 		</script>
     </body>
