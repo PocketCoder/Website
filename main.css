@@ -114,6 +114,7 @@ main.home #outer {
     width: 75vw;
     opacity: 0.5;
     border: 15px solid white;
+    background-color: white;
 }
 
 main.home #outer .caption {
