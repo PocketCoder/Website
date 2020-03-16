@@ -18,7 +18,9 @@
     </head>
     <body>
         <main class="home">
-            <div id="outer"></div>
+            <div id="outer">
+                <p class="caption">photo by me: <span class="name"></span></p>
+            </div>
             <div id="inner">
                 <div>
                     <h1>Jake Williams.</h1>
@@ -41,9 +43,88 @@
 			document.body.className += ' fade-out';
 			$(function() {
                 $('body').removeClass('fade-out');
-                var max = 20;
+                var max = 24;
                 var num = Math.floor(Math.random() * max) + 1;
                 $('#outer').css('background-image', 'url(img/bg/' + num + '.jpg');
+                var title;
+                switch(num) {
+                    case 1:
+                        title = 'Germany, 2019';
+                        break;
+                    case 2:
+                        title = 'Dead in Yellow, 2019';
+                        break;
+                    case 3:
+                        title = 'Myself, 2019';
+                        break;
+                    case 4:
+                        title = 'Myself, 2018';
+                        break;
+                    case 5:
+                        title = '\'We Are Your Children\', 2019';
+                        break;
+                    case 6:
+                        title = '\'fagot\', 2018';
+                        break;
+                    case 7:
+                        title = '\'fagot\', 2018';
+                        break;
+                    case 8:
+                        title = '\'fagot\', 2018';
+                        break;
+                    case 9:
+                        title = '\'fagot\', 2018';
+                        break;
+                    case 10:
+                        title = 'Germany, 2019';
+                        break;
+                    case 11:
+                        title = 'Germany, 2019';
+                        break;
+                    case 12:
+                        title = 'Germany, 2019';
+                        break;
+                    case 13:
+                        title = 'Stockholm, 2019';
+                        break;
+                    case 14:
+                        title = 'Germany, 2019';
+                        break;
+                    case 15:
+                        title = 'Stockholm, 2019';
+                        break;
+                    case 16:
+                        title = '\'fagot\', 2018';
+                        break;
+                    case 17:
+                        title = 'Berlin, 2019';
+                        break;
+                    case 18:
+                        title = 'Eibsee, 2019';
+                        break;
+                    case 19:
+                        title = 'Germany, 2019';
+                        break;
+                    case 20:
+                        title = 'my sister, 2018';
+                        break;
+                    case 21:
+                        title = '\'We Are Your Children\', 2019';
+                        break;
+                    case 22:
+                        title = '\'We Are Your Children\', 2019';
+                        break;
+                    case 23:
+                        title = '\'We Are Your Children\', 2019';
+                        break;
+                    case 24:
+                        title = '\'We Are Your Children\', 2019';
+                        break;
+                    default:
+                        title = '2020';
+                        break;
+                }
+                $('.name').text(title);
 			});
 		</script>
     </body>

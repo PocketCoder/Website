@@ -116,6 +116,18 @@ main.home #outer {
     border: 15px solid white;
 }
 
+main.home #outer .caption {
+    bottom: 10vh;
+    right: 10vw;
+    background: white;
+    position: absolute;
+    padding: 1vh 1vw;
+}
+
+main.home #outer .name {
+    font-style: italic;
+}
+
 main.home #inner {
     height: 10vh;
     width: 30vw;
