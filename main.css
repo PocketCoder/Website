@@ -89,6 +89,10 @@ nav ul li {
     padding: 0.25vh 1vw;
 }
 
+nav ul > li {
+    padding-left: 0;
+}
+
 main {
     width: 100%;
     height: 100%;
@@ -131,7 +135,7 @@ main.home #outer .name {
 
 main.home #inner {
     height: 10vh;
-    width: 30vw;
+    width: 35vw;
     padding: 3vh 3vh;
     display: flex;
 	-webkit-display: flex;
@@ -146,8 +150,8 @@ main.home #inner {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fee9f8",endColorstr="#fee9f8",GradientType=1);
 }
 
-main.home #inner div {
-    padding: 0 2vw 0 0;
+main.home #inner div#nav-container {
+    padding: 0 0 0 3vw;
 }
 
 main.home #inner h3 {
