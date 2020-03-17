@@ -106,7 +106,7 @@ main {
     flex-direction: column;
 }
 
-main.home #outer {
+#home #outer {
     display: flex;
 	-webkit-display: flex;
     justify-content: center;
@@ -121,7 +121,7 @@ main.home #outer {
     background-color: white;
 }
 
-main.home #outer .caption {
+#home #outer .caption {
     bottom: 10vh;
     right: 10vw;
     background: white;
@@ -129,11 +129,11 @@ main.home #outer .caption {
     padding: 1vh 1vw;
 }
 
-main.home #outer .name {
+#home #outer .name {
     font-style: italic;
 }
 
-main.home #inner {
+#home #inner {
     height: 10vh;
     width: 35vw;
     padding: 3vh 3vh;
@@ -150,14 +150,18 @@ main.home #inner {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fee9f8",endColorstr="#fee9f8",GradientType=1);
 }
 
-main.home #inner div#nav-container {
+#home #inner div#nav-container {
     padding: 0 0 0 3vw;
 }
 
-main.home #inner h3 {
+#home #inner h3 {
     padding-top: 3%;
     font-weight: 100;
     font-style: italic; 
+}
+
+#about {
+    
 }
 
 .embed-container {
