@@ -254,7 +254,7 @@ main {
     height: 100%;
 }
 
-main.contact {
+#contact {
     display: flex;
     -webkit-display: flex;
     justify-content: space-around;
@@ -263,15 +263,15 @@ main.contact {
     flex-wrap: wrap;
 }
   
-main.contact div {
+#contact div {
     margin: 10vh 0;
 }
   
-main.contact h1 {
+#contact h1 {
     font-size: 4em;
 }
   
-main.contact div span {
+#contact div span {
     font-size: 1.5em;
     color: #3e3f42;
 }
@@ -289,15 +289,15 @@ main.contact div span {
         display: none;
     }
 
-    main.contact {
+    #contact {
         align-content: center;
     }
 
-    main.contact h1 {
+    #contact h1 {
         font-size: 3em;
     }
 
-    main.contact div {
+    #contact div {
         margin: 0;
     }
 }
@@ -309,12 +309,12 @@ main.contact div span {
 }
 
 @media only screen and (max-width: 800px) {
-    main.home #outer {
+    #home #outer {
         height: 90vh;
         width: 80vw;
     }
     
-    main.home #inner {
+    #home #inner {
         width: 100%;
         background: rgb(254,233,248);
     }
