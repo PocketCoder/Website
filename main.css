@@ -219,11 +219,29 @@ main {
     flex-direction: column;
     width: 25%;
     padding: 0 1vw 0 0;
+    transition: all 1s ease-in-out;
+}
+
+.fav-film:hover {
+    transition: all 1s ease-in-out;
+    width: 27%;
+    cursor: pointer;
 }
 
 .favs .fav-film img {
     width: 100%;
     height: auto;
+}
+
+#cv {
+    display: flex;
+	-webkit-display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10vh;
 }
 
 .embed-container {
@@ -387,5 +405,9 @@ main {
 
     .films {
         margin-top: 60vh;
+    }
+
+    .left, .right {
+        padding: 5vh 5vw;
     }
 }
