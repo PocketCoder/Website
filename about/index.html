@@ -86,6 +86,16 @@
 			$(function() {
     			$('body').removeClass('fade-out');
 			});
+
+			$(document).mousemove(function(e) {
+				var x = e.pageX;
+            	var y = e.pageY;
+				var xPercent = x / $(document).width() * 100;
+				var yPercent = y / $(document).height() * 100;
+				var xWhole = Math.floor(xPercent / 10);
+				var yWhole = Math.floor(yPercent / 10);
+				
+			});
 		</script>
 	</body>
 </html>
