@@ -161,7 +161,69 @@ main {
 }
 
 #about {
-    
+    display: flex;
+	-webkit-display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.circle {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+  
+.circle img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+}
+
+.right p {
+    padding: 0 5vw;
+}
+
+.favs {
+    padding-top: 5vh;
+}
+
+.favs .flex-wrapper {
+    display: flex;
+	-webkit-display:  flex;
+	justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 1vh 0;
+    width: 100%;
+}
+
+.fav-film {
+    display: flex;
+	-webkit-display:  flex;
+	justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    padding: 0 1vw 0 0;
+}
+
+.favs .fav-film img {
+    width: 100%;
+    height: auto;
 }
 
 .embed-container {
