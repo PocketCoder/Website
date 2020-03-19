@@ -32,9 +32,7 @@
 		</header>
 		<main id="about">
 			<div class="left">
-				<div class="circle">
-					<img src="../img/me/1.jpg" id="me" />
-				</div>
+				<div id="me"></div>
 			</div>
 			<div class="right">
 				<div class="about">
@@ -96,14 +94,8 @@
 				var yPercent = y / $(document).height() * 100;
 				var xWhole = Math.floor(xPercent);
 				var yWhole = Math.floor(yPercent);
-				var num;
-				if (xWhole <= 5) {
-					num = 1;
-				} else {
-					num = ((xWhole - (xWhole % 10)) / 10) % 5 + 1 ;
-				}
-				console.log('Num: ' + num + '; (xWhole: ' + xWhole + ' , yWhole: ' + yWhole + ')');
-				$('#me').attr('src', '../img/me/' + num + '.jpg');
+				var num = Math.floor((Math.floor(xWhole / 5) + 1) / 5) + 1;
+				$('#me').css('background-image', 'url(../img/me/' + num + '.jpg)');
 			});
 		</script>
 	</body>
