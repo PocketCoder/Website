@@ -339,7 +339,7 @@ main:not(.no-flex) {
     text-transform: uppercase;
 }
 
-.items {
+#cv .items {
     display: flex;
 	-webkit-display: flex;
     justify-content: center;
@@ -350,17 +350,17 @@ main:not(.no-flex) {
     padding-bottom: 5vh;
 }
 
-.item {
+.cv-item {
     width: 40vw;
     min-height: 15vh;
     padding: 2vh 3vw;
 }
 
-.item * {
+.cv-item * {
     padding-top: 1vh;
 }
 
-.item p {
+.cv-item p {
     padding-top: 2vh;
 }
 
