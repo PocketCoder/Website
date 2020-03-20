@@ -221,17 +221,6 @@ main {
     height: auto;
 }
 
-#cv {
-    display: flex;
-	-webkit-display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 10vh;
-}
-
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
