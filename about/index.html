@@ -87,15 +87,19 @@
 
 			console.log($(window).width());
 
-			$(document).mousemove(function(e) {
+			$('.left').mousemove(function(e) {
 				var x = e.pageX;
             	var y = e.pageY;
-				var xPercent = x / $(document).width() * 100;
-				var yPercent = y / $(document).height() * 100;
+				var xPercent = x / $('.left').width() * 100;
+				var yPercent = y / $('.left').height() * 100;
 				var xWhole = Math.floor(xPercent);
 				var yWhole = Math.floor(yPercent);
 				var num = Math.floor((Math.floor(xWhole / 5) + 1) / 5) + 1;
 				$('#me').css('background-image', 'url(../img/me/' + num + '.jpg)');
+			});
+
+			$('.left').mouseleave(function() {
+				$('#me').css('background-image', 'url(../img/me/1.jpg)');
 			});
 		</script>
 	</body>
