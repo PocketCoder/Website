@@ -92,8 +92,12 @@
 				var yPercent = y / $('.left').height() * 100;
 				var xWhole = Math.floor(xPercent);
 				var yWhole = Math.floor(yPercent);
-				var num = Math.floor((Math.floor(xWhole / 5) + 1) / 5) + 1;
-				$('#me').css('background-image', 'url(../img/me/' + num + '.jpg)');
+				var num = Math.floor((Math.floor(xWhole / 5.5) + 1) / 5.5) + 1;
+				if ($('#me').css('background-image', 'url(../img/me/' + num + '.jpg)')) {
+					$('#me').css('background-image', 'url(../img/me/' + num + '.jpg)');
+				} else {
+					$('#me').css('background-image', 'url(../img/me/1.jpg)');
+				}
 			});
 
 			$('.left').mouseleave(function() {
