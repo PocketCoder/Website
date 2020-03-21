@@ -306,6 +306,11 @@ main:not(.no-flex) {
     padding-top: 5px;
 }
 
+.pulse {
+    transform: scale(1);
+	animation: pulse-black 2s infinite;
+}
+
 .embed-container iframe, .embed-container object, .embed-container embed {
     position: absolute;
     top: 0;
@@ -350,17 +355,17 @@ main:not(.no-flex) {
     padding-bottom: 5vh;
 }
 
-.item {
+cv-.item {
     width: 40vw;
     min-height: 15vh;
     padding: 2vh 3vw;
 }
 
-.item * {
+cv-.item * {
     padding-top: 1vh;
 }
 
-.item p {
+cv-.item p {
     padding-top: 2vh;
 }
 
@@ -449,4 +454,23 @@ main:not(.no-flex) {
     .left, .right {
         padding: 5vh 5vw;
     }
+}
+
+/* ANIMATIONS */
+
+@keyframes pulse-black {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
