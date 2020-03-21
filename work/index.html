@@ -34,12 +34,12 @@
             <section class="films">
                 <section id="films" class="projects">
                     <!--Dead in Yellow-->
-                    <a href="#" target="">
+                    <a href="#" target="" id="coming-soon">
                         <div class="item" style="background-image: url('../img/films/diy.jp2');">
                             <div class="item-info">
                                 <h2>Dead in Yellow</h2>
                                 <span>(drama - 15 mins)</span>
-                                <span>coming soon</span>
+                                <span class="v">coming soon</span>
                             </div>
                         </div>
                     </a>
@@ -69,8 +69,15 @@
         <script>
 			document.body.className += ' fade-out';
 			$(function() {
-    			$('body').removeClass('fade-out');
-			});
+                $('body').removeClass('fade-out');
+            });
+            
+            $('#coming-soon').click(function() {
+                var $me = $(this).find('.v');
+                $me.removeClass('pulse');
+                $me.width(); // Trigger DOM Reflow
+                $me.addClass('pulse');
+            });
 		</script>
     </body>
 </html>
