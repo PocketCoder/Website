@@ -1,11 +1,12 @@
 {
     "spellright.language": [
-        "en"
+        "en-GB"
     ],
     "spellright.documentTypes": [
         "markdown",
         "latex",
         "plaintext",
         "html"
-    ]
+    ],
+    "spellright.groupDictionaries": false
 }
