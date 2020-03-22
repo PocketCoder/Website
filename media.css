@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1000px) {
+    .nav nav {
+        margin: 0 auto 0 auto;
+    }
+
+    .nav nav ul {
+        padding: 0;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
+    #contact {
+        align-content: center;
+    }
+
+    #contact h1 {
+        font-size: 3em;
+    }
+
+    #contact div {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .films {
+        margin-top: 10vh;
+    }
+
+    main .right {
+        margin-top: 5vh;
+    }
+
+    main#work {
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #home #outer {
+        height: 90vh;
+        width: 80vw;
+    }
+    
+    #home #inner {
+        width: 100%;
+        background: rgb(254,233,248);
+    }
+    
+    header.nav h1 {
+        font-size: 1.5em;
+        display: none;
+    }
+
+    header.nav .logo img {
+        display: inherit !important;
+    }
+
+    .films {
+        margin-top: 60vh;
+    }
+
+    .left, .right {
+        padding: 5vh 5vw;
+    }
+
+    main:not(#showreel, #contact) {
+        margin-top: 10vh;
+    }
+
+    main#work {
+        margin-top: 15vh;
+    }
+
+    main#cv h1 {
+        width: 90%;
+        margin: 2vh auto;
+    }
+
+    main#cv .items {
+        padding: 0 2vw;
+    }
+
+    main#cv .cv-item {
+        padding: 2vh 0;
+    }
+
+    #pdf {
+        width: 80% !important;
+        margin: 0 auto !important;
+    }
+
+    #contact h1 {
+        font-size: 3em !important;
+    }
+}
