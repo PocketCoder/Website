@@ -5,6 +5,6 @@ Hosted on Github Pages.
 
 ## Branches & Features
 
-Minor features tested on `beta`.
+Minor features developed on `beta`.
 
-Major features tested on their own `alpha` branch.
+Major features developed on their own `alpha` branch.
