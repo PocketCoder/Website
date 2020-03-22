@@ -14,7 +14,7 @@ Major features tested on their own `alpha` branch.
 - After my name in the nav bar, add "| [page name]" (e.g. *jake williams. | work.*)
 
 ## Colours and styling guidelines
-- Headings should be lowercase and end with on a full stop
+- Headings should be lowercase and end on a full stop
 
 | Colour | Hex |
 |:-----:|:-----:|
