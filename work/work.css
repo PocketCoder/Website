@@ -170,6 +170,10 @@ main section {
     margin: 0 auto;
 }
 
+.slick-dots li button:before {
+    color: #fedbf4 !important;
+}
+
 #diy header {
     background-image: url(../img/films/diy.jp2);
 }
