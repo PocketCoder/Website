@@ -15,6 +15,10 @@
         <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
 
+        <!--Slick slider-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body class="film-page">
@@ -37,9 +41,73 @@
                 <h1>Dead in Yellow</h1>
             </header>
             <section class="main">
-
+                <section id="summary">
+                    <div class="logline">
+                        <h2>a coming-of-age drama following a teenager forced out of the closet</h2>
+                    </div>
+                    <div class="credits">
+                        <h2>cast and crew:</h2>
+                        <div id="break"></div>
+                        <!--Crew-->
+                        <div class="group">
+                            <h3>producer.</h3>
+                            <span>Jacques Wild</span>
+                        </div>
+                        <div class="group me">
+                            <h3>director.</h3>
+                            <span>Jake Williams</span>
+                        </div>
+                        <div class="group">
+                            <h3>cinematographer.</h3>
+                            <span>Brooke Angus</span>
+                        </div>
+                        <div id="break-mobile"></div>
+                        <div class="group">
+                            <h3>editor & sound.</h3>
+                            <span>Jack Ashton</span>
+                        </div>
+                        <div id="break"></div>
+                        <div id="line"></div>
+                        <div id="break"></div>
+                        <!--Cast-->
+                        <div class="group">
+                            <h3>Matthew.</h3>
+                            <span>Ned Wakeley</span>
+                        </div>
+                        <div class="group">
+                            <h3>Daniel.</h3>
+                            <span>Alex Simkin</span>
+                        </div>
+                        <div class="group">
+                            <h3>Mark.</h3>
+                            <span>Wynne Maxwell</span>
+                        </div>
+                        <div class="group">
+                            <h3>Sarah.</h3>
+                            <span>Corinne Strickett</span>
+                        </div>
+                        <div id="break-mobile"></div>
+                        <div class="group">
+                            <h3>Sylvia.</h3>
+                            <span>Hannah Baker-Ferrer</span>
+                        </div>
+                        <div class="group">
+                            <h3>Jessica.</h3>
+                            <span>Kelly Diapere</span>
+                        </div>
+                    </div>
+                </section>
+                <section id="frames">
+                    <div class="slider">
+                        <div><img src="frames/1.jpg" /></div>
+                        <div><img src="frames/2.jpg" /></div>
+                        <div><img src="frames/3.jpg" /></div>
+                        <div><img src="frames/4.png" /></div>
+                      </div>
+                </section>
             </section>
         </main>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script>
             document.body.className += ' fade-out';
 			$(function() {
@@ -47,11 +115,18 @@
             });
             
             $(window).scroll(function() {
-                if ($(window).scrollTop() >= 5) {
+                if ($(window).scrollTop() >= 100) {
                     $('.nav').addClass('pink');
-                } else if ($(window).scrollTop() <= 5) {
+                } else if ($(window).scrollTop() <= 100) {
                     $('.nav').removeClass('pink');
                 }
+            });
+
+            $(".slider").slick({
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autplaySpeed: 2000
             });
         </script>
     </body>
