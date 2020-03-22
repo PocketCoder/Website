@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Open+Sans:400,700&display=swap" />
         <link rel="stylesheet" type="text/css" href="../../main.css" />
+        <link rel="stylesheet" type="text/css" href="work.css" />
 
         <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
@@ -31,15 +32,26 @@
 				</ul>
 			</nav>
         </header>
-        <main class="fp" id="diy">
+        <main class="fp no-flex" id="diy">
             <header>
                 <h1>Dead in Yellow</h1>
             </header>
+            <section class="main">
+
+            </section>
         </main>
         <script>
             document.body.className += ' fade-out';
 			$(function() {
                 $('body').removeClass('fade-out');
+            });
+            
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= 5) {
+                    $('.nav').addClass('pink');
+                } else if ($(window).scrollTop() <= 5) {
+                    $('.nav').removeClass('pink');
+                }
             });
         </script>
     </body>
