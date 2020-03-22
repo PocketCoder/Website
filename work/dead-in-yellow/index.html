@@ -24,7 +24,7 @@
     <body class="film-page">
         <header class="nav">
             <h1><a href="../">jake williams</a>.</h1>
-            <a href="../" class="logo"><img src="../../img/logo-black-transparent.png" /></a>
+            <a href="../" class="logo"><img src="../../img/logo-black-transparent.png" /></a><!--TODO: On dim, change to pink logo-->
 			<nav>
 				<ul>
                     <li><a href="../">home.</a></li>
@@ -108,6 +108,7 @@
             </section>
         </main>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="../../script.js"></script>
         <script>
             document.body.className += ' fade-out';
 			$(function() {
@@ -120,6 +121,13 @@
                 } else if ($(window).scrollTop() <= 100) {
                     $('.nav').removeClass('pink');
                 }
+
+                if ($('.slider').isFullyVisible()) {
+                    $('main section').addClass('dim');
+                    $('.nav').removeClass('pink');
+                } else {
+                    $('main section').removeClass('dim');
+                }
             });
 
             $(".slider").slick({
@@ -127,6 +135,7 @@
                 arrows: false,
                 autoplay: true,
                 autplaySpeed: 2000
+                // TODO: Unslick when on mobile. Different layout needed.
             });
         </script>
     </body>

@@ -1,3 +1,12 @@
+.dim {
+    background-color: #292a2d;
+    transition: background-color 1s ease-in-out;
+}
+
+main section {
+    transition: background-color 1s ease-in-out;
+}
+
 #break {
     width: 0;
     height: 0;
@@ -150,6 +159,10 @@
     border: 2px solid black;
     margin: 2vh 0;
     height: 0%;
+}
+
+#frames .slider {
+    padding-top: 20vh;
 }
 
 .slider div img {
