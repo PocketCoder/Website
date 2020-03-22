@@ -1,3 +1,5 @@
+@import url(media.css);
+
 * {
     padding: 0;
     margin: 0;
@@ -77,6 +79,12 @@ header.nav h1 {
 
 header nav ul {
     padding-right: 4vw;
+}
+
+header.nav .logo img {
+    display: none;
+    width: 15vw;
+    margin: 0 5vw 1vh 5vw;
 }
 
 nav ul {
@@ -350,21 +358,21 @@ main:not(.no-flex) {
     padding-bottom: 5vh;
 }
 
-cv-.item {
+.cv-item {
     width: 40vw;
     min-height: 15vh;
     padding: 2vh 3vw;
 }
 
-cv-.item * {
+.cv-item * {
     padding-top: 1vh;
 }
 
-cv-.item p {
+.cv-item p {
     padding-top: 2vh;
 }
 
-.wronguns .item h3 {
+.wronguns .cv-item h3 {
     padding: 5vh 0 0 0;
 }
 
@@ -393,62 +401,6 @@ cv-.item p {
 #contact div span {
     font-size: 1.5em;
     color: #3e3f42;
-}
-
-@media only screen and (max-width: 1000px) {
-    .nav nav {
-        margin: 0 auto 0 auto;
-    }
-
-    .nav nav ul {
-        padding: 0;
-    }
-
-    .no-mobile {
-        display: none;
-    }
-
-    #contact {
-        align-content: center;
-    }
-
-    #contact h1 {
-        font-size: 3em;
-    }
-
-    #contact div {
-        margin: 0;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .films {
-        margin-top: 10vh;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #home #outer {
-        height: 90vh;
-        width: 80vw;
-    }
-    
-    #home #inner {
-        width: 100%;
-        background: rgb(254,233,248);
-    }
-    
-    header.nav h1 {
-        font-size: 1.5em;
-    }
-
-    .films {
-        margin-top: 60vh;
-    }
-
-    .left, .right {
-        padding: 5vh 5vw;
-    }
 }
 
 /* ANIMATIONS */
