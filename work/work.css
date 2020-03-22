@@ -26,6 +26,11 @@ main section {
     transition: all 0.5s ease-in-out;
 }
 
+.film-page header.nav a:before, .pink a.active:before {
+    /* Underline */
+    background-color: #fedbf4;
+}
+
 .film-page header.nav:hover {
     background-color: #fedbf4;
     transition: all 0.5s ease-in-out;
@@ -43,6 +48,12 @@ main section {
 .pink h1, .pink a {
     color: #292a2d !important;
     transition: all 0.5s ease-in-out;
+}
+
+.pink a:before, .pink a.active:before {
+    /* Underline */
+    /* FIXME: Change to black when in dim/pink mode and you hover on the link */
+    background-color: #000 !important;
 }
 
 .film-page header:not(.nav) {
