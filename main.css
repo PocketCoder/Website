@@ -12,6 +12,7 @@ html, body {
     opacity: 1;
     transition: all 1s ease-in-out;
     background-color: #fedbf4;
+    scroll-behavior: smooth;
 }
   
 body.fade-out {
