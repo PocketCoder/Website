@@ -19,15 +19,15 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body class="film-page">
         <header class="nav">
-            <h1><a href="../">jake williams</a>.</h1>
-            <a href="../" class="logo"><img src="../../img/logo-black-transparent.png" /></a><!--TODO: On dim, change to pink logo-->
+            <h1><a href="../../">jake williams</a>.</h1>
+            <a href="../../" class="logo"><img src="../../img/logo-black-transparent.png" /></a><!--TODO: On dim, change to pink logo-->
 			<nav>
 				<ul>
-                    <li><a href="../">home.</a></li>
+                    <li><a href="../../">home.</a></li>
                     <li><a href="../../showreel/">about.</a></li>
 					<li><a href="../../showreel/">showreel.</a></li>
 					<li><a href="../../work/" class="active">work.</a></li>
@@ -36,72 +36,47 @@
 				</ul>
 			</nav>
         </header>
-        <main class="fp no-flex" id="diy">
+        <main class="fp no-flex" id="fagot">
             <header>
-                <h1>Dead in Yellow</h1>
+                <h1>fagot</h1>
             </header>
             <section class="main">
                 <section id="summary">
                     <div class="logline">
-                        <h2>a coming-of-age drama following a teenager forced out of the closet</h2>
+                        <h2>an experimental film focusing on heteronormativity and homophobia in media and life</h2>
                     </div>
                     <div class="credits">
                         <h2>cast and crew:</h2>
                         <div id="break"></div>
                         <!--Crew-->
                         <div class="group">
-                            <h3>producer.</h3>
-                            <span>Jacques Wild</span>
-                        </div>
-                        <div class="group me">
-                            <h3>director.</h3>
+                            <h3>a film by.</h3>
                             <span>Jake Williams</span>
                         </div>
                         <div class="group">
                             <h3>cinematographer.</h3>
                             <span>Brooke Angus</span>
                         </div>
-                        <div id="break-mobile"></div>
-                        <div class="group">
-                            <h3>editor & sound.</h3>
-                            <span>Jack Ashton</span>
-                        </div>
                         <div id="break"></div>
                         <div id="line"></div>
                         <div id="break"></div>
                         <!--Cast-->
                         <div class="group">
-                            <h3>Matthew.</h3>
-                            <span>Ned Wakeley</span>
+                            <h3>boy.</h3>
+                            <span>Sammy Hewett</span>
                         </div>
                         <div class="group">
-                            <h3>Daniel.</h3>
-                            <span>Alex Simkin</span>
+                            <h3>girl.</h3>
+                            <span>Rebecca Bates</span>
                         </div>
-                        <div class="group">
-                            <h3>Mark.</h3>
-                            <span>Wynne Maxwell</span>
-                        </div>
-                        <div class="group">
-                            <h3>Sarah.</h3>
-                            <span>Corinne Strickett</span>
-                        </div>
-                        <div id="break-mobile"></div>
-                        <div class="group">
-                            <h3>Sylvia.</h3>
-                            <span>Hannah Baker-Ferrer</span>
-                        </div>
-                        <div class="group">
-                            <h3>Jessica.</h3>
-                            <span>Kelly Diapere</span>
-                        </div>
+                    </div>
                     </div>
                 </section>
                 <section id="frames">
                     <div class="slider">
-                        <div><img src="frames/1.jpg" /></div>
-                        <div><img src="frames/2.jpg" /></div>
-                        <div><img src="frames/3.jpg" /></div>
+                        <div><img src="frames/1.png" /></div>
+                        <div><img src="frames/2.png" /></div>
+                        <div><img src="frames/3.png" /></div>
                         <div><img src="frames/4.png" /></div>
                       </div>
                 </section>
@@ -113,20 +88,24 @@
             document.body.className += ' fade-out';
 			$(function() {
                 $('body').removeClass('fade-out');
+                $('.nav').addClass('pink');
             });
             
             $(window).scroll(function() {
+                /*
                 if ($(window).scrollTop() >= 100) {
-                    $('.nav').addClass('pink');
+                    $('.nav').addClass('pink fagot-pink');
                 } else if ($(window).scrollTop() <= 100) {
-                    $('.nav').removeClass('pink');
+                    // Do nothing
                 }
+                */
 
                 if ($('.slider').isFullyVisible()) {
                     $('main section').addClass('dim');
                     $('.nav').removeClass('pink');
                 } else {
                     $('main section').removeClass('dim');
+                    $('.nav').addClass('pink');
                 }
             });
 
