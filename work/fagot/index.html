@@ -18,12 +18,12 @@
         <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
 
         <!--Slick slider-->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="../assets/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../assets/slick/slick-theme.css"/>
 
         <!--Dot navigation-->
-        <script type="text/javascript" src="../assets/Modernizr.js"></script>
-        <link rel="stylesheet" type="text/css" href="../assets/dots.css" />
+        <script type="text/javascript" src="../assets/dots/Modernizr.js"></script>
+        <link rel="stylesheet" type="text/css" href="../assets/dots/dots.css" />
     </head>
     <body class="film-page">
         <nav id="cd-vertical-nav" >
@@ -50,12 +50,6 @@
                     <a href="#film" data-number="1">
                         <span class="cd-dot"></span>
                         <span class="cd-label">the film.</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#script" data-number="1">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label">the script.</span>
                     </a>
                 </li>
             </ul>
@@ -119,10 +113,15 @@
                         <div><img src="frames/4.png" /></div>
                       </div>
                 </section>
+                <section id="film">
+                    <div class="embed-container">
+                        <iframe src="https://player.vimeo.com/video/331249831" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen><iframe>
+                    </div>
+                </section>
             </section>
         </main>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script type="text/javascript" src="../assets/dots.js"></script>
+        <script type="text/javascript" src="../assets/slick.min.js"></script>
+        <script type="text/javascript" src="../assets/dots/dots.js"></script>
         <script type="text/javascript" src="../../script.js"></script>
         <script>
             document.body.className += ' fade-out';
@@ -132,7 +131,6 @@
             });
             
             $(window).scroll(function() {
-
                 if ($('.slider').isFullyVisible()) {
                     $('main section').addClass('dim');
                     $('.nav').removeClass('pink');
