@@ -10,7 +10,9 @@
 
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Open+Sans:400,700&display=swap" />
         <link rel="stylesheet" type="text/css" href="../../main.css" />
-        <link rel="stylesheet" type="text/css" href="../work.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/work.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
@@ -19,9 +21,45 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!--Dot navigation-->
+        <script type="text/javascript" src="../assets/Modernizr.js"></script>
+        <link rel="stylesheet" type="text/css" href="../assets/dots.css" />
     </head>
     <body class="film-page">
+        <nav id="cd-vertical-nav" >
+            <ul>
+                <li>
+                    <a href="#home" data-number="1">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">home.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#summary" data-number="2">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">summary.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#frames" data-number="1">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">frames.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#film" data-number="1">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">the film.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#script" data-number="1">
+                        <span class="cd-dot"></span>
+                        <span class="cd-label">script.</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <header class="nav">
             <h1><a href="../../">jake williams</a>.</h1>
             <a href="../../" class="logo"><img src="../../img/logo-black-transparent.png" /></a><!--TODO: On dim, change to pink logo-->
@@ -37,7 +75,8 @@
 			</nav>
         </header>
         <main class="fp no-flex" id="fagot">
-            <header>
+            <nav id="dot-nav"></nav>
+            <header id="home">
                 <h1>fagot</h1>
             </header>
             <section class="main">
@@ -83,12 +122,17 @@
             </section>
         </main>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="../assets/dots.js"></script>
         <script type="text/javascript" src="../../script.js"></script>
         <script>
             document.body.className += ' fade-out';
 			$(function() {
                 $('body').removeClass('fade-out');
                 $('.nav').addClass('pink');
+            });
+
+            $('.cd-vertical-nav ul li a').click(function() {
+                console.log('hello');
             });
             
             $(window).scroll(function() {
