@@ -12,6 +12,7 @@ Major features tested on their own `alpha` branch.
 ### Features to implement:
 - Film pages (wip: `alpha/film-pages`)
 - After my name in the nav bar, add "| [page name]" (e.g. *jake williams. | work.*)
+- New CV timeline
 
 ## Colours and styling guidelines
 - Headings should be lowercase and end on a full stop
@@ -20,3 +21,4 @@ Major features tested on their own `alpha` branch.
 |:-----:|:-----:|
 | Pink | #fedbf4 |
 | Black | #292a2d |
+| White | #F8FFF4 |
